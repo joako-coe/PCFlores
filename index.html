@@ -298,17 +298,22 @@ updateSlider();
       <p class="text-gray-400 text-lg max-w-2xl">Contanos cuál es el problema con tu PC o notebook. Te responderemos a la brevedad con un diagnóstico inicial y la mejor solución.</p>
     </div>
 
-    <form action="enviar.php" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <input type="text" name="nombre" placeholder="* Nombre" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
-      <input type="text" name="direccion" placeholder="Dirección" class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
-      <input type="tel" name="telefono" placeholder="* Teléfono" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
-      <input type="email" name="email" placeholder="Email" class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
-      <input type="text" name="asunto" placeholder="* Asunto" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm md:col-span-2 focus:outline-none focus:border-blue-800">
-      <textarea name="mensaje" rows="6" placeholder="* Mensaje" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm resize-none md:col-span-2 focus:outline-none focus:border-blue-800"></textarea>
-      <button type="submit" class="md:col-span-2 bg-white text-blue-800 font-bold py-4 hover:bg-blue-800 hover:text-white transition cursor-pointer">
-          Enviar consulta
-      </button>
-    </form>
+   <form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <input type="hidden" name="access_key" value="35420cda-b289-46ff-886e-9890a7257c25">
+  <input type="hidden" name="subject" value="Nueva consulta desde PCFlores web">
+  <input type="hidden" name="from_name" value="PCFlores - Formulario web">
+
+  <input type="text" name="nombre" placeholder="* Nombre" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
+  <input type="text" name="direccion" placeholder="Dirección" class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
+  <input type="tel" name="telefono" placeholder="* Teléfono" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
+  <input type="email" name="email" placeholder="Email" class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm focus:outline-none focus:border-blue-800">
+  <input type="text" name="asunto" placeholder="* Asunto" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm md:col-span-2 focus:outline-none focus:border-blue-800">
+  <textarea name="mensaje" rows="6" placeholder="* Mensaje" required class="bg-transparent border border-zinc-600 text-white placeholder-zinc-400 px-4 py-3 rounded-sm resize-none md:col-span-2 focus:outline-none focus:border-blue-800"></textarea>
+
+  <button type="submit" class="md:col-span-2 bg-white text-blue-800 font-bold py-4 hover:bg-blue-800 hover:text-white transition cursor-pointer">
+    Enviar consulta
+  </button>
+</form>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 pt-12 border-t border-zinc-900">
       <div>
@@ -328,26 +333,31 @@ updateSlider();
       <div>
         <h3 class="text-white text-2xl font-semibold mb-6">También podés encontrarnos en</h3>
         <div class="flex flex-wrap gap-8">
-          <a href="https://wa.me/5491136970130" target="_blank" class="group flex flex-col items-center transition">
-            <i class="fa-brands fa-whatsapp text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
-            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">WhatsApp</span>
-          </a>
-          <a href="https://instagram.com/informaticapcflores" target="_blank" class="group flex flex-col items-center transition">
-            <i class="fa-brands fa-instagram text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
-            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Instagram</span>
-          </a>
-          <a href="https://www.facebook.com/people/Soluciones-Informaticas-PC-Flores/100063929955283/?ref=pages_you_manage#" target="_blank" class="group flex flex-col items-center transition">
-            <i class="fa-brands fa-facebook text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
-            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Facebook</span>
-          </a>
-          <a href="https://www.google.com/maps/place/Tecnico+Computacion+a+domicilio+Pc+Flores/@-34.6410614,-58.3667893,16.5z/data=!4m15!1m8!3m7!1s0x95a334b1a29c61a1:0xb8c95ae80001f81f!2sCarlos+F.+Melo+226,+C1163ACF+Cdad.+Aut%C3%B3noma+de+Buenos+Aires!3b1!8m2!3d-34.6404162!4d-58.3645329!16s%2Fg%2F11jylsmy1q!3m5!1s0x95a334b198113d67:0xfb2158e0f7ae46da!8m2!3d-34.6404346!4d-58.3645408!16s%2Fg%2F1z44qvckh?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="group flex flex-col items-center transition">
-            <i class="fa-solid fa-location-dot text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
-            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Google Maps</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <a href="https://wa.me/5491136970130" target="_blank" class="group flex flex-col items-center transition">
+    <i class="fa-brands fa-whatsapp text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
+    <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">WhatsApp</span>
+  </a>
+  <a href="https://instagram.com/informaticapcflores" target="_blank" class="group flex flex-col items-center transition">
+    <i class="fa-brands fa-instagram text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
+    <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Instagram</span>
+  </a>
+  <a href="https://www.facebook.com/people/Soluciones-Informaticas-PC-Flores/100063929955283/?ref=pages_you_manage#" target="_blank" class="group flex flex-col items-center transition">
+    <i class="fa-brands fa-facebook text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
+    <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Facebook</span>
+  </a>
+  <a href="https://x.com/informaticapcf" target="_blank" class="group flex flex-col items-center transition">
+    <i class="fa-brands fa-x-twitter text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
+    <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">X</span>
+  </a>
+  <a href="https://medium.com/@informaticapcflores" target="_blank" class="group flex flex-col items-center transition">
+    <i class="fa-brands fa-medium text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
+    <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Blog</span>
+  </a>
+  <a href="https://www.google.com/maps/place/Tecnico+Computacion+a+domicilio+Pc+Flores/@-34.6410614,-58.3667893,16.5z/data=!4m15!1m8!3m7!1s0x95a334b1a29c61a1:0xb8c95ae80001f81f!2sCarlos+F.+Melo+226,+C1163ACF+Cdad.+Aut%C3%B3noma+de+Buenos+Aires!3b1!8m2!3d-34.6404162!4d-58.3645329!16s%2Fg%2F11jylsmy1q!3m5!1s0x95a334b198113d67:0xfb2158e0f7ae46da!8m2!3d-34.6404346!4d-58.3645408!16s%2Fg%2F1z44qvckh?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="group flex flex-col items-center transition">
+    <i class="fa-solid fa-location-dot text-4xl text-white group-hover:text-blue-800 transition duration-300"></i>
+    <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Google Maps</span>
+  </a>
+</div>
 </section>
 
 <footer class="bg-black border-t border-blue-800/40 px-6 py-12 text-zinc-400 text-sm">
